@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Container, Typography } from "@mui/material";
 import AddTodoComp from "../components/AddTodoComp";
+import TodoList from "../components/TodoList";
 interface TodoType {
   todo: string;
   isDone: boolean;
@@ -57,6 +58,7 @@ const Home = () => {
         Todo App with Typescript
       </Typography>
       <AddTodoComp addTodo={addTodo} />
+      <TodoList />
     </Container>
   );
 };
