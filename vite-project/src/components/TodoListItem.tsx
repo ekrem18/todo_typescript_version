@@ -1,9 +1,25 @@
-import React from 'react'
+import { IconButton, ListItem, ListItemText } from "@mui/material";
+import React, { FC } from "react";
+import DeleteIcon from "@mui/icons-material/Delete";
 
-const TodoListItem = () => {
-  return (
-    <div>TodoListItem</div>
-  )
+interface ITodoListItem {
+  todo: TodoType;
+  deleteTodo: DeleteFn;
+  toggleTodo: ToggleFn;
 }
 
-export default TodoListItem
+const TodoListItem: FC<ITodoListItem> = ({ todo, deleteTodo, toggleTodo }) => {
+  return (
+    <ListItem
+      disableGutters
+      secondaryAction={
+        <IconButton aria-label="comment" onClick={() => deleteTodo(todo.id)}>
+          <DeleteIcon />
+        </IconButton>
+      }>
+      <ListItemText primary={todo.todo} onClick={() => toggleTodo(todo)} />
+    </ListItem>
+  );
+};
+
+export default TodoListItem;
