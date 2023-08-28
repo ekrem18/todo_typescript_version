@@ -13,6 +13,7 @@ const AddTodoComp = ({ addTodo }: {addTodo:(text: string) => Promise<void>}) => 
 
   const handleClick = () => {
     console.log(text);
+    addTodo(text)
     setText("");
   };
 
