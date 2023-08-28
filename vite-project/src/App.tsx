@@ -1,15 +1,12 @@
-import { Container } from "@mui/material"
-import Home from "./pages/Home"
+import { Container } from "@mui/material";
+import Home from "./pages/Home";
 
 function App() {
-  
-
   return (
     <Container>
-      <Home/>
-        
+      <Home />
     </Container>
-  )
+  );
 }
 
-export default App
+export default App;
