@@ -7,10 +7,10 @@ interface TodoType {
 }
 
 const Home = () => {
-  const[todos, setTodos] = useState([])
+  const[todos, setTodos] = useState<TodoType[]>([])
 
   return (
-    <div>Homes</div>
+    <div onClick={()=> setTodos([{id:5, todo:"emre", isDone:true }])}>Homes</div>
   )
 }
 
