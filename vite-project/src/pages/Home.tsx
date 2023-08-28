@@ -10,7 +10,7 @@ const Home = () => {
   const[todos, setTodos] = useState([])
 
   return (
-    <div>Home</div>
+    <div>Homes</div>
   )
 }
 
