@@ -25,6 +25,14 @@ const Home = () => {
     }
   };
 
+  const addTodo = async (text: string) => {
+    try {
+      await axios.post(url, { todo: text, isDone: false });
+    } catch (error) {console.log(error) finally{
+      getTodos()
+    };}
+  };
+
   useEffect(() => {
     getTodos();
   }, []);
@@ -36,10 +44,11 @@ const Home = () => {
         align="center"
         variant="h2"
         component={"h1"}
-        mt={3}>
+        mt={3}
+      >
         Todo App with Typescript
       </Typography>
-      <AddTodoComp/>
+      <AddTodoComp />
     </Container>
   );
 };
