@@ -79,12 +79,13 @@ const Home = () => {
   return (
     <Container>
       <Typography
-        color="error"
+        color="#2196f3"
         align="center"
-        variant="h2"
+        variant="h3"
         component={"h1"}
-        mt={3}>
-        Todo App with Typescript
+        mt={3}
+        mb={4}>
+        Todo App React-Vite-Typescript Version
       </Typography>
       <AddTodoComp addTodo={addTodo} />
       <TodoList todos={todos} deleteTodo={deleteTodo} toggleTodo={toggleTodo} />

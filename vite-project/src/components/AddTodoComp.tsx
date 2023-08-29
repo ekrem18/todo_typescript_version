@@ -68,7 +68,7 @@ const AddTodoComp = ({ addTodo }: IAddTodoComp) => {
         }}>
         <TextField
           id="outlined-basic"
-          label="New Todo"
+          label="Add New Todo"
           sx={{ minWidth: { xs: "100%", sm: "50%" }, height: "50px", m: 1 }}
           variant="outlined"
           value={text}
@@ -81,7 +81,7 @@ const AddTodoComp = ({ addTodo }: IAddTodoComp) => {
           disabled={!text.trim()}
           sx={{ minWidth: { xs: "100%", sm: "15%" }, height: "55px", m: 1 }}
           endIcon={<SaveIcon />}>
-          Save Todo
+          Add Todo
         </Button>
       </Box>
     </Container>

@@ -25,13 +25,14 @@ const TodoList: React.FC<ITodoList> = ({ todos,toggleTodo,deleteTodo }) => {
         xs={12}
         sm={5}
         sx={{
-          border: "1px solid purple",
+          border: "1px solid red",
           borderRadius: "0.5rem",
+          backgroundColor: "#ff8a80",
           p: "1rem",
           minHeight: "350px",
         }}>
-        <Typography color="secondary" align="center" variant="h4">
-          InProgress Todos
+        <Typography color="red" align="center" variant="h4">
+        To-Do List
         </Typography>
         {progressTodos.length ? (
           progressTodos.map(todo => (
@@ -54,11 +55,12 @@ const TodoList: React.FC<ITodoList> = ({ todos,toggleTodo,deleteTodo }) => {
         sx={{
           border: "1px solid green",
           borderRadius: "0.5rem",
+          backgroundColor: "#c5e1a5",
           p: "1rem",
           minHeight: "350px",
         }}>
         <Typography sx={{ color: "green" }} align="center" variant="h4">
-          Completed Todos
+          Completed List
         </Typography>
         {completedTodos.length ? (
           completedTodos.map(todo => (
