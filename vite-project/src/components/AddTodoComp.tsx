@@ -1,6 +1,6 @@
 import { Box, Button, Container, TextField } from "@mui/material";
 import SaveIcon from "@mui/icons-material/Save";
-import React, { useState } from "react";
+import { useState } from "react";
 
 interface IAddTodoComp {
   // addTodo: (text: string) => Promise<void>;
