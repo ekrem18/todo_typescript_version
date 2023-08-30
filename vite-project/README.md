@@ -37,4 +37,4 @@ In the project directory, you can run:
 
 <h2>How does my project look</h2>
 
-![stock app](https://github.com/ekrem18/ekrem18/assets/130497212/4de056dc-4f4f-40ff-82c7-27caa584725f)
+![toDo](https://github.com/ekrem18/ekrem18/assets/130497212/8f25ebe7-33e1-44d3-b112-9c56a0c640e3)
